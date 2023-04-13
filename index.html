@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Game</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+      #game-board {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        background-color: #fff;
+      }
+      #score {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      #game-controls {
+        text-align: center;
+      }
+      #restart-button {
+        display: none;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body onload="startGame()">
+    <canvas id="game-board" width="400" height="400"></canvas>
+    <div id="score">Score: <span id="score-value">0</span></div>
+    <div id="game-controls">
+        <button id="restart-button" onclick="restartGame()">Restart Game</button>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
